@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <% Html.DevExpress().RenderStyleSheets(Page,
+           new StyleSheet { ExtensionSuite = ExtensionSuite.GridView },
+           new StyleSheet { ExtensionSuite = ExtensionSuite.HtmlEditor },
+           new StyleSheet { ExtensionSuite = ExtensionSuite.Editors },
+           new StyleSheet { ExtensionSuite = ExtensionSuite.NavigationAndLayout }
+    ); %>
+    <link href="<%= Url.Content("~/Content/Site.css") %>" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="<%= Url.Content("~/Scripts/jquery-1.4.1.js") %>"></script>
+    <% Html.DevExpress().RenderScripts(Page,
+           new Script { ExtensionSuite = ExtensionSuite.GridView },
+           new Script { ExtensionSuite = ExtensionSuite.HtmlEditor },
+           new Script { ExtensionSuite = ExtensionSuite.Editors },
+           new Script { ExtensionSuite = ExtensionSuite.NavigationAndLayout }
+    ); %>
+</head>
+
+<body>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+</body>
+</html>
