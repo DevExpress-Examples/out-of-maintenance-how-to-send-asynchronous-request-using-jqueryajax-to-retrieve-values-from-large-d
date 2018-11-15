@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
+* [GridViewPartial.ascx](./CS/Views/Home/GridViewPartial.ascx) (VB: [GridViewPartial.ascx](./VB/Views/Home/GridViewPartial.ascx))
+* [Index.aspx](./CS/Views/Home/Index.aspx) (VB: [Index.aspx](./VB/Views/Home/Index.aspx))
+<!-- default file list end -->
 # How to send asynchronous request using jQuery.ajax to retrieve values from large database
 
 
